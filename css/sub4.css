@@ -1,0 +1,219 @@
+@import url(header.css);
+@import url(footer.css);
+#sub4_visual {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+  background-color: #cfe3ff;
+}
+.vbox {
+  width: 1200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.vbox img {
+  width: 100%;
+  height: 100%;
+}
+
+.contwrap {
+  width: 1200px;
+  height: 1600px;
+  margin: 0 auto;
+}
+#nav {
+  width: 200px;
+  margin-top: 100px;
+  float: left;
+  background-color: #fff;
+}
+#nav .navi {
+  width: 200px;
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
+#nav .navi li.group {
+  margin-bottom: 3px;
+}
+#nav .navi li.group .msub {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#nav .navi li.group .msub li {
+  height: 35px;
+  margin-bottom: 2px;
+  line-height: 30px;
+  background: #eee 5px 10px;
+  background-size: 8px 8px;
+}
+#nav .navi li.group .msub li :hover {
+  background: #eee url(../images/dotdot.png) no-repeat 5px 10px;
+  background-size: 8px 8px;
+}
+#nav .navi li.group .msub li a {
+  text-decoration: none;
+  font-size: 13px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  text-indent: 20px;
+}
+#nav .navi li.group .msub li a:hover {
+  color: #083E88;
+  font-weight: bold;
+}
+#nav .navi .title {
+  height: 35px;
+  margin-bottom: 2px;
+  padding-left: 5px;
+  line-height: 30px;
+  color: #fff;
+  background-color: #3075d4;
+  cursor: pointer;
+  position: relative;
+}
+#nav .navi .title:hover {
+  background-color: #083E88;
+}
+#nav .navi .title.open {
+  background-color: #083E88;
+}
+#nav .navi .title::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: 15px;
+  width: 10px;
+  height: 2px;
+  transform: rotate(90deg);
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+#nav .navi .title::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: 15px;
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+#nav .navi .title.open::before {
+  transform: rotate(180deg);
+}
+#nav .navi .title.open::after {
+  opacity: 0;
+}
+#nav .navi .title:last-child::before, #nav .navi .title:last-child::after {
+  display: none;
+}
+
+.contwrap .cont1 {
+  position: relative;
+  margin-top: 100px;
+  width: 1000px;
+  height: 1500px;
+  float: right;
+}
+.sub2 {
+  width: 970px;
+  margin-left: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid #333;
+}
+.sub2 h2 {
+  font-size: 35px;
+  font-weight: bold;
+}
+.sub2 p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.contbox1 {
+  position: relative;
+  width: 1000px;
+  height: 1500px;
+  margin: 30px 0 0 30px;
+}
+.tab-box {
+  position: absolute;
+  width: 1000px;
+  height: 1500px;
+}
+.tab-box .tabs li {
+  float: left;
+  margin: 5px 0 0 10px;
+  padding: 10px 15px;
+  width: 200px;
+  border: 1px solid #999;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+}
+.tab-box .tabs li.current {
+  color: #fff;
+  background-color: #000;
+}
+.tab-box .tabs li:hover {
+  color: #fff;
+  background-color: #000;
+}
+.tab-content {
+  float: left;
+  display: none;
+  width: 1200px;
+  height: 1500px;
+  padding: 10px;
+  text-align: left;
+}
+
+.tab-box .tab-content.current {
+  display: block;
+}
+.tab-box .conbox1 {
+  width: 970px;
+  margin: 60px 0 0 30px;
+}
+.tab-box .conbox1 h4 {
+  font-size: 18px;
+}
+.tab-box .conbox1 ul li {
+  list-style: circle;
+  margin: 20px 0 0 20px;
+  font-size: 16px;
+}
+.tab-box .conbox1 ul li img {
+  margin-top: 40px;
+}
+.tab-box .conbox2 {
+  width: 970px;
+  margin: 60px 0 0 30px;
+}
+.tab-box .conbox2 h4 {
+  font-size: 18px;
+}
+.tab-box .conbox2 ul li {
+  list-style: circle;
+  margin: 20px 0 0 20px;
+  font-size: 16px;
+}
+.tab-box .conbox3 {
+  width: 970px;
+  margin: 60px 0 0 30px;
+}
+.tab-box .conbox3 h4 {
+  font-size: 18px;
+}
+.tab-box .conbox3 ul li {
+  list-style: circle;
+  margin: 20px 0 0 20px;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=sub4.css.map */

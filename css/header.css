@@ -1,0 +1,110 @@
+
+@font-face {
+    font-family: 'Paperlogy-8ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{margin: 0;padding: 0;}
+a{text-decoration: none;color: #000;}
+li{list-style: none;}
+img{vertical-align: top;}
+body{font-size: 14px; font-family: 'Pretendard-Regular';}
+em{font-style: normal;}
+/* layout */
+
+
+/* skip */
+#skip{ position: absolute; margin: 0 auto; width: 100%; list-style: none; font-size: 1.15em; top: -10.5em; left: 0; z-index: 999;}
+#skip a:focus, #skip a:active { 
+position: absolute; padding-top: 0.7em;
+    width: 100%; height: 2em; top: 10.5em; z-index: 999; 
+    text-align: center;color:#fff; background: #333;
+    overflow: visible;}
+
+/* header */
+
+#header{width: 100%;height: 100px;position: fixed;top: 0;left: 0;
+    background-color: rgba(255,255,255,0.5);z-index: 300;}
+#header .inner{position: relative;width: 1200px;height: 100px;margin: 0 auto;}
+
+#header .inner .h_icon{position: absolute;top: 5px;left: 10px;}
+#header .inner .h_icon li{float: left;margin-right: 5px;width: 40px;height: 40px;}
+#header .inner .h_icon li img{width: 100%;height: 100%;}
+
+#header .inner .logo{width: 180px;height: 35px;position: absolute;top: 10px;left: 50%;margin-left: -90px;}
+#header .inner .logo img{width: 100%;height: 100%;}
+
+#header .inner .toplink{position: absolute;top: 10px;right: 10px;}
+#header .inner .toplink li{float: left;margin-left: 10px;height: 20px;line-height: 20px;}
+#header .inner .toplink li a{font-size: 16px;}
+#header .inner .toplink li select{border: 0;height: 20px;width: 60px;font-size: 16px;border-radius: 5px;}
+
+
+#header .inner .gnb{position: absolute;top: 50px;left: 0;z-index: 99;}
+#header .inner .gnb li{width: 200px;height: 50px;line-height: 50px;text-align: center;float: left;}
+#header .inner .gnb li:hover{background-color: #083E88;transition: all 0.5s;}
+#header .inner .gnb li > a{font-family: 'Paperlogy-8ExtraBold';font-size: 20px;display: block;}
+#header .inner .gnb li:hover > a{color: #fff;transition: all 0.5s;}
+#header .inner .gnb li:hover .sub{background-color: #fff;border-bottom: 1px solid #000;}
+
+
+
+#header .inner .gnb .sub > li a{font-size: 16px;display: block;}
+#header .inner .gnb .sub{position: absolute;top: 50px;left: 0;}
+#header .inner .gnb .sub li{float: left;width: 300px;}
+#header .inner .gnb .sub li:hover{background-color: #63c47b;}
+#header .inner .gnb .sub li:hover a{color: #000;}
+
+
+
+#header .inner .gnb .sub{display: none;}
+
+
+#gnbFull{display: none; width: 100%;height: 100%;background:rgba(13, 21, 44, 0.95);position: fixed;left: 0;top: 0;z-index: 1000;}
+#menu{width: 1400px;height: auto;margin: 50px auto;}
+#menu li{float: left;width: 15%;height: 80%;margin: 5px;
+box-sizing: border-box;}
+#menu h3{margin-top: 5px;border-bottom: 1px solid #fff;margin: 10px;line-height: 40px;}
+#menu h3 > a{color: #fff;font-size: 25px;font-family: 'Paperlogy-8ExtraBold';}
+#menu ul li:hover h3 > a{color: #f6d044;}
+#menu ul li:hover h3{border-bottom: 1px solid #f6d044;}
+#menu .sub_menu li{width: 90%;height: 24px;line-height: 24px; font-size: 16px;
+    margin: 5px;padding-left: 5px;}
+#menu .sub_menu li a{display: block; color: #fff;font-family: 'Pretendard-Regular';}
+#menu ul li:first-child .sub_menu li:nth-child(9) a{font-size: 14px;}
+#menu .sub_menu li:hover a{color: #f6d044;}
+
+.mclose{width:60px;height:60px;          
+    display: block;position: absolute;left: 20px;top: 20px;}
+    
+.mclose img{width: 100%;height: 100%;transition: all 0.3s;}
+.mclose img:hover{transform: rotateZ(180deg);}  
+.menupop img{width: 30px;margin-top: -10px;}
+
+
+/* searchbox */
+.search_wrap{width: 600px;position: absolute;top: 100px;left: 0;
+background-color: #083E88;padding: 10px 0;height: 40px; display: none;}
+
+
+.search_wrap .search_box input[type=search]{
+float: left;width: 70%;border: 0;margin-left: 30px;height: 40px;
+outline: 1px solid #fff;padding-left: 20px;font-size: 20px;background-color: #083E88;color: #fff;
+border-radius: 10px;
+}
+.search_wrap .search_box input::placeholder{color: #fff}
+
+.search_wrap .search_box input[type=image]{
+float: right;width: 40px;height: 40px;margin: 0 30px 0 0;
+}
+
+fieldset{border: 0;}
+legend{font-size: 0;}

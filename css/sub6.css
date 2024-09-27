@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import url(header.css);
+@import url(footer.css);
+
+#sub6_visual{width: 100%;height: 200px;margin-top: 100px;background-color: #cfe3ff;}
+#sub6_visual .vbox{width: 1200px;height: 200px;margin: 0 auto;}
+#sub6_visual .vbox img{width: 100%;height: 100%;}
+
+.contwrap{width: 1200px;height: 1200px; margin: 0 auto;}
+
+.contwrap #nav{width: 200px;margin-top: 100px;
+float: left;background-color: #fff;}
+
+.contwrap #nav .navi{width: 200px;margin-bottom: 2px;margin-top: 10px;}
+.contwrap #nav .navi li.group{margin-bottom: 3px;}
+.contwrap #nav .navi .msub{list-style: none;margin: 0;padding: 0;}
+
+.contwrap #nav .title{height: 35px;margin-bottom: 2px;padding-left: 5px;
+line-height: 30px;color: #fff;background-color: #3075d4;cursor: pointer;}
+.contwrap #nav .title:hover,
+.contwrap #nav .title.open{background-color: #083E88;}
+
+.contwrap #nav .navi .group .msub li{height: 35px;margin-bottom: 2px;line-height: 30px;
+  background: #eee 5px 10px;background-size: 8px 8px;}
+  .contwrap #nav .navi .group .msub li a{text-decoration: none;font-size: 13px;
+  display: block;width: 100%;height: 100%;color: #333;text-indent: 20px;}
+  .contwrap #nav .navi .group .msub li:hover{background: #eee url(../images/dotdot.png) no-repeat 5px 10px;background-size: 8px 8px; }
+  .contwrap #nav .navi .group .msub li:hover a{color: #083E88;font-weight: bold;}
+
+.cont1{position: relative;margin-top: 100px;width: 1000px;height: 1200px;; float: right;}
+.cont1 .sub2{width: 970px;margin-left: 30px;padding: 20px 0;border-bottom: 1px solid #333;}
+.cont1 .sub2 h2{font-size: 35px;font-weight: bold;}
+.cont1 .sub2 p{font-size: 16px;font-weight: bold;margin: 20px 0;}
+
+
+.cont1 .conbox1{width: 970px;margin: 60px 0 0 30px;}
+
+
+
+
+
+.navi .group:last-child .title{
+    position: relative;
+}
+.navi .group:last-child .title::before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    width: 10px;
+    height: 2px;
+    transform: rotate(90deg);
+    background: #fff;
+    transition: all .3s ease-in-out;
+  }
+  
+  .navi .group:last-child .title::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    transition: all .2s ease-in-out;
+  }
+  
+  .navi .group:last-child .title.open::before {
+    transform: rotate(180deg);
+  }
+  
+  .navi .group:last-child .title.open::after {
+    opacity: 0;
+  }
+
+  

@@ -1,0 +1,178 @@
+
+/* footer */
+
+#footer{width: 100%;height: 300px;background-color: #083E88;}
+#footer .inner{width: 1200px;height: 300px; position: relative;margin: 0 auto;}
+
+#footer .inner .fbox1{position: absolute;}
+#footer .inner .fbox1 .f_link{display: flex;justify-content: space-around;width: 1200px;height: 100px;line-height: 100px;
+border-bottom: 1px solid #fff;}
+
+#footer .inner .fbox1 .f_link li a{font-size: 16px;color: #fff;}
+
+#footer .inner .fbox2{position: absolute;top: 160px;left: 10px;}
+#footer .inner .fbox2 p{font-size: 14px;color: #fff;}
+#footer .inner .fbox2 .copy{margin-top: 20px;}
+
+#footer .inner .fbox3{position: absolute;top: 150px;right: 300px;width: 150px;height: 90px;}
+#footer .inner .fbox3 img{width: 100%;height: 100%;}
+
+#footer .inner .fbox4{position: absolute;top: 150px;right: 80px;width: 150px;height: 80px;}
+
+
+#footer .inner .css-validator{position: absolute;right: -50px;bottom: 70px;}
+
+
+
+
+
+
+/*dropdown1*/
+.location {   
+    /* position: absolute;top: 20px;left: 20px; */
+
+    display: block;
+    
+}
+
+.location button{
+    /* padding: 8px 16px; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+    width: 150px;height: 30px;
+}
+
+.location .location_btn button:hover {
+    background-color: #f5f5f5;
+}
+
+.location_menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 100%;  /* Position it just below the button */
+    width: 100%; /* Make it as wide as the button */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: auto; /* In case there are many links */
+}
+
+.location_menu a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.location_menu a:last-child {
+    border-bottom: none; /* Remove the bottom border for the last link */
+}
+
+.location_menu a:hover {
+    background-color: #f5f5f5;
+}
+
+/* Show the dropdown when hovering over the .dropdown container */
+.location:hover .location_menu {
+    display: block;
+}
+
+
+.location button::after {
+    content: '';                     /* Clear content */
+    border-left: 5px solid transparent;   /* Left arrow slant */
+    border-right: 5px solid transparent;  /* Right arrow slant */
+    border-top: 5px solid #000;          /* Top border color and size */
+    display: inline-block;           /* Allow it to sit next to the text */
+    margin-left: 10px;   /* Space between the text and the arrow */
+    margin-top: -5px;
+    vertical-align: middle;          /* Vertically align the arrow */
+}
+
+.location button {
+    padding-right: 24px;  
+}
+
+/*dropdown2*/
+
+.family {
+    /* position: absolute;bottom: 20px; right: 20px;     */
+    margin-top: 20px;
+    display: block;
+    
+}
+
+.family button {
+    /* padding: 8px 16px; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+    width: 150px;height: 30px;
+}
+
+.family button:hover {
+    background-color: #f5f5f5;
+}
+
+.family_menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: 30px;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+.family_menu a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.family_menu a:last-child {
+    border-bottom: none;
+}
+
+.family_menu a:hover {
+    background-color: #f5f5f5;
+}
+
+.family:hover .family_menu {
+    display: block;
+}
+
+.family button::after {
+    content: '';
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+
+.family button {
+    padding-right: 24px;
+}

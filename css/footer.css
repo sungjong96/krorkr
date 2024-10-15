@@ -1,8 +1,8 @@
 
 /* footer */
 
-#footer{width: 100%;height: 300px;background-color: #083E88;}
-#footer .inner{width: 1200px;height: 300px; position: relative;margin: 0 auto;}
+#footer{width: 100%;height: 260px;background-color: #083E88;}
+#footer .inner{width: 1200px;height: 260px; position: relative;margin: 0 auto;}
 
 #footer .inner .fbox1{position: absolute;}
 #footer .inner .fbox1 .f_link{display: flex;justify-content: space-around;width: 1200px;height: 100px;line-height: 100px;
@@ -10,17 +10,18 @@ border-bottom: 1px solid #fff;}
 
 #footer .inner .fbox1 .f_link li a{font-size: 16px;color: #fff;}
 
-#footer .inner .fbox2{position: absolute;top: 160px;left: 10px;}
+#footer .inner .fbox2{position: absolute;top: 140px;left: 10px;}
 #footer .inner .fbox2 p{font-size: 14px;color: #fff;}
 #footer .inner .fbox2 .copy{margin-top: 20px;}
 
-#footer .inner .fbox3{position: absolute;top: 150px;right: 300px;width: 150px;height: 90px;}
+#footer .inner .fbox3{position: absolute;top: 160px;right: 200px;width: 80px;height: 50px;}
 #footer .inner .fbox3 img{width: 100%;height: 100%;}
 
-#footer .inner .fbox4{position: absolute;top: 150px;right: 80px;width: 150px;height: 80px;}
+#footer .inner .fbox4{position: absolute;top: 140px;right: 10px;width: 150px;height: 80px;}
 
+#footer .inner .html-validator{position: absolute;right: 400px;bottom: 60px;}
+#footer .inner .css-validator{position: absolute;right: 295px;bottom: 60px;}
 
-#footer .inner .css-validator{position: absolute;right: -50px;bottom: 70px;}
 
 
 
